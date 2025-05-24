@@ -1,12 +1,11 @@
-
 const express = require("express");
 const path = require("path");
+const serverless = require("serverless-http");
 
 const app = express();
-const PORT = 3000;
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());  // To parse JSON requests
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
@@ -14,7 +13,6 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "start.html"));
 });
 
-// Handle difficulty selection and send redirect response
 app.post("/", (req, res) => {
     const difficulty = req.body.difficulty;
     console.log("Difficulty selected:", difficulty);
@@ -30,10 +28,8 @@ app.post("/", (req, res) => {
         return res.status(400).json({ error: "Invalid difficulty selected." });
     }
 
-    res.json({ redirectUrl });  // Send response with redirect URL
+    res.json({ redirectUrl });
 });
 
-app.listen(PORT, () => {
-    console.log(`✅ Server running at http://localhost:${PORT}/`);
-});
-
+// Export the app as a serverless function
+module.exports.handler = serverless(app);
