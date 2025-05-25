@@ -40,3 +40,15 @@ The backend handles routing and flow control between the start page and differen
 ```bash
 git clone https://github.com/your-username/flipit.git
 cd flipit
+```
+### Install dependencies
+
+```bash
+npm install
+```
+Run the server
+
+```bash
+node index.js
+
+
