@@ -1,59 +1,42 @@
-🎴 FlipIt – Memory Card Game
-FlipIt is a memory-based card game where players test their memory by flipping and matching pairs of cards. Choose your difficulty level and see how well your memory holds up!
+# 🎴 FlipIt – Memory Card Game
 
-🚀 Live Demo
-🔗 Play FlipIt Now
+**FlipIt** is a memory-based card game where players test their memory by flipping and matching pairs of cards. Choose your difficulty level and see how well your memory holds up!
 
-🧠 Game Features
-🎯 Difficulty Selection: Choose from Easy, Medium, or Hard modes.
+---
 
-🧩 Classic Memory Gameplay: Flip cards, find matching pairs, and win the game.
+## 🚀 Live Demo
 
-🕹️ Responsive Interface: Smooth user experience across devices.
+🔗 [Play FlipIt Now](https://flipit-9ee5.onrender.com/)
 
-💻 Tech Stack
-🖥️ Frontend
-HTML
+---
 
-CSS
+## 🧠 Game Features
 
-JavaScript
+- 🎯 **Difficulty Selection**: Choose from Easy, Medium, or Hard modes.
+- 🧩 **Classic Memory Gameplay**: Flip cards, find matching pairs, and win the game.
+- 🕹️ **Responsive Interface**: Smooth user experience across devices.
 
-⚙️ Backend
-Node.js
+---
 
-Express.js
+## 💻 Tech Stack
+
+### 🖥️ Frontend
+- HTML  
+- CSS  
+- JavaScript
+
+### ⚙️ Backend
+- Node.js  
+- Express.js  
 
 The backend handles routing and flow control between the start page and different difficulty game modes.
 
-🛠️ Getting Started (Local Setup)
-Clone the repo
+---
 
-bash
-Copy
-Edit
+## 🛠️ Getting Started (Local Setup)
+
+### Clone the repo
+
+```bash
 git clone https://github.com/your-username/flipit.git
 cd flipit
-Install dependencies
-
-bash
-Copy
-Edit
-npm install
-Run the server
-
-bash
-Copy
-Edit
-node app.js
-Play the game
-Visit http://localhost:3000 in your browser.
-
-📌 Future Improvements
-Add timer and scoring system.
-
-Store high scores using a database.
-
-Include multiplayer or challenge modes.
-
-
