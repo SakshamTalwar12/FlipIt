@@ -46,9 +46,19 @@ cd flipit
 ```bash
 npm install
 ```
-Run the server
+### Run the server
 
 ```bash
 node index.js
+```
+## Play the Game
+**Visit http://localhost:3000 in your browser.**
+
+## Future Improvements 
+- Add timer and scoring system.
+
+- Store high scores using a database.
+
+- Include multiplayer or challenge modes.
 
 
